@@ -14,35 +14,6 @@ offset_right = 300.0
 offset_bottom = 60.0
 theme_override_constants/separation = 4
 
-[node name="AbilityLabel" type="Label" parent="."]
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -180.0
-offset_top = 200.0
-offset_right = -20.0
-offset_bottom = 350.0
-grow_horizontal = 0
-theme_override_font_sizes/font_size = 16
-text = "LMB: Attack
-RMB: Magic
-Q: Companion"
-horizontal_alignment = 2
-
-[node name="HintsLabel" type="Label" parent="."]
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -400.0
-offset_top = 15.0
-offset_right = -15.0
-offset_bottom = 60.0
-grow_horizontal = 0
-theme_override_font_sizes/font_size = 12
-text = "WASD Move | Shift Sprint | Space Jump"
-horizontal_alignment = 2
-vertical_alignment = 0
-
 [node name="LockOnIndicator" type="Control" parent="."]
 anchors_preset = 0
 offset_right = 30.0

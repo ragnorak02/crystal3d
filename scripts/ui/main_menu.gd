@@ -16,11 +16,27 @@ func _ready() -> void:
 	settings_btn.pressed.connect(_on_settings)
 	quit_btn.pressed.connect(_on_quit)
 
+	# Set up circular focus navigation
+	var first_btn := continue_btn if continue_btn.visible else new_game_btn
+	first_btn.focus_neighbor_top = quit_btn.get_path()
+	quit_btn.focus_neighbor_bottom = first_btn.get_path()
+
 	# Focus first available button for controller navigation
 	if continue_btn.visible:
 		continue_btn.grab_focus()
 	else:
 		new_game_btn.grab_focus()
+
+
+func _input(event: InputEvent) -> void:
+	if event.is_action_pressed("ui_confirm"):
+		var focused := get_viewport().gui_get_focus_owner()
+		if focused is Button:
+			focused.pressed.emit()
+			get_viewport().set_input_as_handled()
+	elif event.is_action_pressed("ui_back"):
+		_on_quit()
+		get_viewport().set_input_as_handled()
 
 
 func _on_continue() -> void:

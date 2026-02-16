@@ -15,11 +15,11 @@ func _ready() -> void:
 
 
 func _input(event: InputEvent) -> void:
-	if event.is_action_pressed("move_right") or event.is_action_pressed("lock_on_next"):
+	if event.is_action_pressed("move_right") or event.is_action_pressed("lock_on_next") or event.is_action_pressed("ui_right"):
 		selected_index = mini(selected_index + 1, 2)
 		_update_panels()
 		get_viewport().set_input_as_handled()
-	elif event.is_action_pressed("move_left") or event.is_action_pressed("lock_on_prev"):
+	elif event.is_action_pressed("move_left") or event.is_action_pressed("lock_on_prev") or event.is_action_pressed("ui_left"):
 		selected_index = maxi(selected_index - 1, 0)
 		_update_panels()
 		get_viewport().set_input_as_handled()

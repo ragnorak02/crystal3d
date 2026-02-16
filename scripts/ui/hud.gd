@@ -1,9 +1,7 @@
 extends CanvasLayer
-## In-game HUD — hearts, ability icons, control hints, lock-on indicator.
+## In-game HUD — hearts, lock-on indicator.
 
 @onready var hearts_container: HBoxContainer = $HeartsContainer
-@onready var ability_label: Label = $AbilityLabel
-@onready var hints_label: Label = $HintsLabel
 @onready var lock_on_indicator: Control = $LockOnIndicator
 
 var _player: CharacterBase
@@ -11,7 +9,6 @@ var _player: CharacterBase
 
 func _ready() -> void:
 	lock_on_indicator.visible = false
-	hints_label.text = "WASD Move | Shift Sprint | Space Jump | C Crouch\nLMB Attack | RMB Magic | Q Companion | Tab Lock-On"
 	await get_tree().process_frame
 	_find_player()
 

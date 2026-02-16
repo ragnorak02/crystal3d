@@ -20,7 +20,15 @@ func _ready() -> void:
 
 
 func _input(event: InputEvent) -> void:
-	if event.is_action_pressed("ui_back"):
+	if event.is_action_pressed("ui_confirm"):
+		var focused := get_viewport().gui_get_focus_owner()
+		if focused is Button:
+			focused.pressed.emit()
+			get_viewport().set_input_as_handled()
+		elif focused is CheckButton:
+			focused.button_pressed = !focused.button_pressed
+			get_viewport().set_input_as_handled()
+	elif event.is_action_pressed("ui_back"):
 		_on_back()
 		get_viewport().set_input_as_handled()
 

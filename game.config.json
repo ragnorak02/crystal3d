@@ -1,0 +1,31 @@
+{
+  "id": "crystal3d",
+  "title": "Crystal 3D",
+  "engine": "godot",
+  "engineVersion": "4.6",
+  "renderer": "gl_compatibility",
+  "genre": "3D Action RPG",
+  "status": "in-development",
+  "entryScene": "scenes/ui/TitleScreen.tscn",
+  "projectFile": "project.godot",
+  "testRunner": "tests/run-tests.gd",
+  "testCommand": "--headless --script tests/run-tests.gd",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  },
+  "features": [
+    "controller-support",
+    "save-system",
+    "multiple-characters",
+    "state-machine-ai",
+    "hitbox-hurtbox-combat",
+    "lock-on-system"
+  ],
+  "metadata": {
+    "lastGameplayUpdate": "2026-02-16",
+    "lastArtUpdate": "",
+    "buildVersion": "0.1.0",
+    "progressPercent": 15
+  }
+}
