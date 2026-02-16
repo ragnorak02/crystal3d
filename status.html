@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hybrid Nights — Project Status</title>
+<style>
+  :root { --bg: #0d1117; --card: #161b22; --border: #30363d; --text: #c9d1d9; --heading: #f0f6fc; --green: #3fb950; --yellow: #d29922; --red: #f85149; --blue: #58a6ff; --dim: #8b949e; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; background: var(--bg); color: var(--text); padding: 24px; max-width: 1100px; margin: 0 auto; }
+  h1 { color: var(--heading); font-size: 1.8em; margin-bottom: 4px; }
+  .subtitle { color: var(--dim); margin-bottom: 24px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; margin-bottom: 24px; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 16px; }
+  .card h2 { color: var(--heading); font-size: 1.1em; margin-bottom: 12px; border-bottom: 1px solid var(--border); padding-bottom: 8px; }
+  .row { display: flex; justify-content: space-between; align-items: center; padding: 6px 0; border-bottom: 1px solid var(--border); }
+  .row:last-child { border-bottom: none; }
+  .label { color: var(--text); }
+  .badge { padding: 2px 10px; border-radius: 12px; font-size: 0.8em; font-weight: 600; }
+  .done { background: rgba(63,185,80,0.15); color: var(--green); }
+  .partial { background: rgba(210,153,34,0.15); color: var(--yellow); }
+  .none { background: rgba(248,81,73,0.15); color: var(--red); }
+  .info { background: rgba(88,166,255,0.15); color: var(--blue); }
+  .bar-container { background: var(--border); border-radius: 4px; height: 8px; margin-top: 8px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 4px; transition: width 0.3s; }
+  .bar-green { background: var(--green); }
+  .bar-yellow { background: var(--yellow); }
+  .summary { display: flex; gap: 24px; flex-wrap: wrap; margin-bottom: 24px; }
+  .stat { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 16px 24px; text-align: center; min-width: 140px; }
+  .stat .num { font-size: 2em; font-weight: 700; color: var(--heading); }
+  .stat .lbl { color: var(--dim); font-size: 0.85em; }
+  table { width: 100%; border-collapse: collapse; }
+  th, td { text-align: left; padding: 8px 12px; border-bottom: 1px solid var(--border); }
+  th { color: var(--dim); font-weight: 600; font-size: 0.85em; text-transform: uppercase; }
+  .ts { color: var(--dim); font-size: 0.8em; text-align: right; margin-top: 24px; }
+</style>
+</head>
+<body>
+
+<h1>Hybrid Nights</h1>
+<p class="subtitle">Godot 4.6 &middot; GL Compatibility &middot; 3D Action-Adventure</p>
+
+<div class="summary">
+  <div class="stat"><div class="num">156</div><div class="lbl">Files Tracked</div></div>
+  <div class="stat"><div class="num">3</div><div class="lbl">Characters</div></div>
+  <div class="stat"><div class="num">14</div><div class="lbl">Player States</div></div>
+  <div class="stat"><div class="num">7</div><div class="lbl">Test Suites</div></div>
+  <div class="stat"><div class="num">~73</div><div class="lbl">Assertions</div></div>
+</div>
+
+<div class="grid">
+
+  <div class="card">
+    <h2>Core Systems</h2>
+    <div class="row"><span class="label">State Machine (14 states)</span><span class="badge done">Done</span></div>
+    <div class="row"><span class="label">Character Hierarchy (3 classes)</span><span class="badge done">Done</span></div>
+    <div class="row"><span class="label">Hitbox / Hurtbox Combat</span><span class="badge done">Done</span></div>
+    <div class="row"><span class="label">Fireball Projectile</span><span class="badge done">Done</span></div>
+    <div class="row"><span class="label">HealthComponent</span><span class="badge done">Done</span></div>
+    <div class="row"><span class="label">AttackData Resource</span><span class="badge done">Done</span></div>
+    <div class="row"><span class="label">Input System (15 actions)</span><span class="badge done">Done</span></div>
+    <div class="row"><span class="label">Collision Layers (9)</span><span class="badge done">Done</span></div>
+  </div>
+
+  <div class="card">
+    <h2>Companions</h2>
+    <div class="row"><span class="label">CompanionBase + follow logic</span><span class="badge done">Done</span></div>
+    <div class="row"><span class="label">FairyCompanion (drift)</span><span class="badge done">Done</span></div>
+    <div class="row"><span class="label">DragonCompanion (attack)</span><span class="badge partial">Partial</span></div>
+    <div class="row"><span class="label">CompanionBase.on_companion_action</span><span class="badge none">Stub</span></div>
+    <div class="bar-container"><div class="bar-fill bar-yellow" style="width:65%"></div></div>
+  </div>
+
+  <div class="card">
+    <h2>Enemies</h2>
+    <div class="row"><span class="label">EnemyBase (5-state SM)</span><span class="badge done">Done</span></div>
+    <div class="row"><span class="label">MeleeGrunt</span><span class="badge done">Done</span></div>
+    <div class="row"><span class="label">Detection Area AI</span><span class="badge done">Done</span></div>
+    <div class="row"><span class="label">Additional enemy types</span><span class="badge none">Not Started</span></div>
+    <div class="bar-container"><div class="bar-fill bar-yellow" style="width:50%"></div></div>
+  </div>
+
+  <div class="card">
+    <h2>Camera &amp; Lock-On</h2>
+    <div class="row"><span class="label">Camera Rig</span><span class="badge done">Done</span></div>
+    <div class="row"><span class="label">Lock-On System</span><span class="badge done">Done</span></div>
+    <div class="row"><span class="label">HUD Lock-On Indicator</span><span class="badge done">Done</span></div>
+    <div class="bar-container"><div class="bar-fill bar-green" style="width:100%"></div></div>
+  </div>
+
+  <div class="card">
+    <h2>UI / Menus</h2>
+    <div class="row"><span class="label">TitleScreen</span><span class="badge done">Done</span></div>
+    <div class="row"><span class="label">MainMenu</span><span class="badge done">Done</span></div>
+    <div class="row"><span class="label">CharacterSelect</span><span class="badge done">Done</span></div>
+    <div class="row"><span class="label">PauseMenu</span><span class="badge done">Done</span></div>
+    <div class="row"><span class="label">HUD (hearts + hints)</span><span class="badge partial">Text Only</span></div>
+    <div class="row"><span class="label">Settings</span><span class="badge partial">Minimal</span></div>
+    <div class="bar-container"><div class="bar-fill bar-yellow" style="width:75%"></div></div>
+  </div>
+
+  <div class="card">
+    <h2>Save System</h2>
+    <div class="row"><span class="label">JSON save/load/delete</span><span class="badge done">Done</span></div>
+    <div class="row"><span class="label">Versioned + timestamped</span><span class="badge done">Done</span></div>
+    <div class="row"><span class="label">Auto-save on level entry</span><span class="badge done">Done</span></div>
+    <div class="bar-container"><div class="bar-fill bar-green" style="width:100%"></div></div>
+  </div>
+
+  <div class="card">
+    <h2>Assets &amp; Polish</h2>
+    <div class="row"><span class="label">3D Models</span><span class="badge none">Not Started</span></div>
+    <div class="row"><span class="label">Animations</span><span class="badge none">Not Started</span></div>
+    <div class="row"><span class="label">Audio / Music</span><span class="badge none">Not Started</span></div>
+    <div class="row"><span class="label">UI Sprites / Textures</span><span class="badge none">Not Started</span></div>
+    <div class="row"><span class="label">Particle Effects</span><span class="badge none">Not Started</span></div>
+    <div class="bar-container"><div class="bar-fill bar-yellow" style="width:0%"></div></div>
+  </div>
+
+  <div class="card">
+    <h2>Testing</h2>
+    <table>
+      <tr><th>Suite</th><th>Status</th></tr>
+      <tr><td>test_project</td><td><span class="badge info">Structural</span></td></tr>
+      <tr><td>test_characters</td><td><span class="badge info">Structural</span></td></tr>
+      <tr><td>test_combat</td><td><span class="badge info">Structural</span></td></tr>
+      <tr><td>test_enemies</td><td><span class="badge info">Structural</span></td></tr>
+      <tr><td>test_save</td><td><span class="badge done">Functional</span></td></tr>
+      <tr><td>test_input</td><td><span class="badge info">Structural</span></td></tr>
+      <tr><td>test_ui</td><td><span class="badge info">Structural</span></td></tr>
+    </table>
+  </div>
+
+</div>
+
+<p class="ts">Auto-generated dashboard &middot; Last updated: 2026-02-16</p>
+
+</body>
+</html>
