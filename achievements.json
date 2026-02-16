@@ -1,0 +1,226 @@
+{
+  "gameId": "crystal3d",
+  "achievements": [
+    {
+      "id": "first_steps",
+      "name": "First Steps",
+      "description": "Complete the title screen and enter the main menu",
+      "points": 5,
+      "icon": "assets/icons/achievements/first_steps.png",
+      "unlocked": false,
+      "unlockedAt": null
+    },
+    {
+      "id": "choose_your_fighter",
+      "name": "Choose Your Fighter",
+      "description": "Select a character and enter the game level",
+      "points": 10,
+      "icon": "assets/icons/achievements/choose_your_fighter.png",
+      "unlocked": false,
+      "unlockedAt": null
+    },
+    {
+      "id": "blade_dancer",
+      "name": "Blade Dancer",
+      "description": "Play as the Fighter",
+      "points": 10,
+      "icon": "assets/icons/achievements/blade_dancer.png",
+      "unlocked": false,
+      "unlockedAt": null
+    },
+    {
+      "id": "lance_bearer",
+      "name": "Lance Bearer",
+      "description": "Play as the Spear Adept",
+      "points": 10,
+      "icon": "assets/icons/achievements/lance_bearer.png",
+      "unlocked": false,
+      "unlockedAt": null
+    },
+    {
+      "id": "dragon_pact",
+      "name": "Dragon Pact",
+      "description": "Play as the Dragonbound",
+      "points": 10,
+      "icon": "assets/icons/achievements/dragon_pact.png",
+      "unlocked": false,
+      "unlockedAt": null
+    },
+    {
+      "id": "well_rounded",
+      "name": "Well Rounded",
+      "description": "Play as all three characters at least once",
+      "points": 25,
+      "icon": "assets/icons/achievements/well_rounded.png",
+      "unlocked": false,
+      "unlockedAt": null
+    },
+    {
+      "id": "first_blood",
+      "name": "First Blood",
+      "description": "Defeat your first enemy",
+      "points": 10,
+      "icon": "assets/icons/achievements/first_blood.png",
+      "unlocked": false,
+      "unlockedAt": null
+    },
+    {
+      "id": "fireball",
+      "name": "Playing With Fire",
+      "description": "Launch a fireball projectile",
+      "points": 10,
+      "icon": "assets/icons/achievements/fireball.png",
+      "unlocked": false,
+      "unlockedAt": null
+    },
+    {
+      "id": "sky_walker",
+      "name": "Sky Walker",
+      "description": "Perform a double jump",
+      "points": 10,
+      "icon": "assets/icons/achievements/sky_walker.png",
+      "unlocked": false,
+      "unlockedAt": null
+    },
+    {
+      "id": "glider",
+      "name": "Wind Rider",
+      "description": "Glide through the air as Dragonbound",
+      "points": 15,
+      "icon": "assets/icons/achievements/glider.png",
+      "unlocked": false,
+      "unlockedAt": null
+    },
+    {
+      "id": "dragon_dive",
+      "name": "Dragon Dive",
+      "description": "Perform a dragon jump (third air jump)",
+      "points": 20,
+      "icon": "assets/icons/achievements/dragon_dive.png",
+      "unlocked": false,
+      "unlockedAt": null
+    },
+    {
+      "id": "high_flyer",
+      "name": "High Flyer",
+      "description": "Perform a high jump from crouch",
+      "points": 10,
+      "icon": "assets/icons/achievements/high_flyer.png",
+      "unlocked": false,
+      "unlockedAt": null
+    },
+    {
+      "id": "long_jumper",
+      "name": "Long Jumper",
+      "description": "Perform a long jump while sprinting",
+      "points": 10,
+      "icon": "assets/icons/achievements/long_jumper.png",
+      "unlocked": false,
+      "unlockedAt": null
+    },
+    {
+      "id": "companion_call",
+      "name": "Companion Call",
+      "description": "Use your companion's action ability",
+      "points": 10,
+      "icon": "assets/icons/achievements/companion_call.png",
+      "unlocked": false,
+      "unlockedAt": null
+    },
+    {
+      "id": "dragon_strike",
+      "name": "Dragon Strike",
+      "description": "Have the Dragon Companion defeat an enemy",
+      "points": 20,
+      "icon": "assets/icons/achievements/dragon_strike.png",
+      "unlocked": false,
+      "unlockedAt": null
+    },
+    {
+      "id": "locked_on",
+      "name": "Locked On",
+      "description": "Lock on to an enemy target",
+      "points": 10,
+      "icon": "assets/icons/achievements/locked_on.png",
+      "unlocked": false,
+      "unlockedAt": null
+    },
+    {
+      "id": "target_swap",
+      "name": "Target Swap",
+      "description": "Switch between lock-on targets",
+      "points": 10,
+      "icon": "assets/icons/achievements/target_swap.png",
+      "unlocked": false,
+      "unlockedAt": null
+    },
+    {
+      "id": "survivor",
+      "name": "Survivor",
+      "description": "Take damage and survive with 1 HP remaining",
+      "points": 15,
+      "icon": "assets/icons/achievements/survivor.png",
+      "unlocked": false,
+      "unlockedAt": null
+    },
+    {
+      "id": "full_recovery",
+      "name": "Full Recovery",
+      "description": "Heal back to full HP after taking damage",
+      "points": 15,
+      "icon": "assets/icons/achievements/full_recovery.png",
+      "unlocked": false,
+      "unlockedAt": null
+    },
+    {
+      "id": "save_scribe",
+      "name": "Save Scribe",
+      "description": "Save your game progress for the first time",
+      "points": 10,
+      "icon": "assets/icons/achievements/save_scribe.png",
+      "unlocked": false,
+      "unlockedAt": null
+    },
+    {
+      "id": "grunt_slayer",
+      "name": "Grunt Slayer",
+      "description": "Defeat 10 Melee Grunts",
+      "points": 25,
+      "icon": "assets/icons/achievements/grunt_slayer.png",
+      "unlocked": false,
+      "unlockedAt": null
+    },
+    {
+      "id": "untouchable",
+      "name": "Untouchable",
+      "description": "Defeat an enemy without taking any damage",
+      "points": 30,
+      "icon": "assets/icons/achievements/untouchable.png",
+      "unlocked": false,
+      "unlockedAt": null
+    },
+    {
+      "id": "settings_tweaker",
+      "name": "Settings Tweaker",
+      "description": "Open the settings menu and change a setting",
+      "points": 5,
+      "icon": "assets/icons/achievements/settings_tweaker.png",
+      "unlocked": false,
+      "unlockedAt": null
+    },
+    {
+      "id": "night_warrior",
+      "name": "Night Warrior",
+      "description": "Earn all other achievements",
+      "points": 50,
+      "icon": "assets/icons/achievements/night_warrior.png",
+      "unlocked": false,
+      "unlockedAt": null
+    }
+  ],
+  "meta": {
+    "totalPointsEarned": 0,
+    "totalPointsPossible": 355,
+    "lastUpdated": "2026-02-16T00:00:00.000Z"
+  }
+}
