@@ -1,0 +1,94 @@
+[gd_scene load_steps=15 format=3]
+
+[ext_resource type="Script" path="res://scripts/enemies/melee_grunt.gd" id="1_script"]
+[ext_resource type="Script" path="res://scripts/characters/state_machine.gd" id="2_sm"]
+[ext_resource type="Script" path="res://scripts/enemies/enemy_states/enemy_idle_state.gd" id="3_idle"]
+[ext_resource type="Script" path="res://scripts/enemies/enemy_states/enemy_patrol_state.gd" id="4_patrol"]
+[ext_resource type="Script" path="res://scripts/enemies/enemy_states/enemy_chase_state.gd" id="5_chase"]
+[ext_resource type="Script" path="res://scripts/enemies/enemy_states/enemy_attack_state.gd" id="6_attack"]
+[ext_resource type="Script" path="res://scripts/enemies/enemy_states/enemy_die_state.gd" id="7_die"]
+[ext_resource type="Script" path="res://scripts/combat/hitbox.gd" id="8_hitbox"]
+[ext_resource type="Script" path="res://scripts/combat/hurtbox.gd" id="9_hurtbox"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_1"]
+radius = 0.0875
+height = 0.35
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_1"]
+radius = 0.0875
+height = 0.35
+
+[sub_resource type="StandardMaterial3D" id="GruntMat"]
+albedo_color = Color(0.85, 0.2, 0.15, 1)
+
+[sub_resource type="SphereShape3D" id="HitboxShape"]
+radius = 0.2
+
+[sub_resource type="SphereShape3D" id="DetectionShape"]
+radius = 5.0
+
+[node name="MeleeGrunt" type="CharacterBody3D"]
+collision_layer = 4
+collision_mask = 1
+script = ExtResource("1_script")
+max_hp = 3
+move_speed = 3.0
+detection_range = 5.0
+attack_range = 0.5
+attack_damage = 1
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.175, 0)
+shape = SubResource("CapsuleShape3D_1")
+
+[node name="EnemyModel" type="Node3D" parent="."]
+
+[node name="Body" type="MeshInstance3D" parent="EnemyModel"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.175, 0)
+mesh = SubResource("CapsuleMesh_1")
+surface_material_override/0 = SubResource("GruntMat")
+
+[node name="StateMachine" type="Node" parent="."]
+script = ExtResource("2_sm")
+initial_state_name = "EnemyIdle"
+
+[node name="EnemyIdle" type="Node" parent="StateMachine"]
+script = ExtResource("3_idle")
+
+[node name="Patrol" type="Node" parent="StateMachine"]
+script = ExtResource("4_patrol")
+
+[node name="Chase" type="Node" parent="StateMachine"]
+script = ExtResource("5_chase")
+
+[node name="EnemyAttack" type="Node" parent="StateMachine"]
+script = ExtResource("6_attack")
+
+[node name="Die" type="Node" parent="StateMachine"]
+script = ExtResource("7_die")
+
+[node name="DetectionArea" type="Area3D" parent="."]
+collision_layer = 0
+collision_mask = 2
+
+[node name="DetectionCol" type="CollisionShape3D" parent="DetectionArea"]
+shape = SubResource("DetectionShape")
+
+[node name="Hitbox" type="Area3D" parent="."]
+collision_layer = 16
+collision_mask = 32
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.175, -0.2)
+monitoring = false
+script = ExtResource("8_hitbox")
+
+[node name="HitboxCol" type="CollisionShape3D" parent="Hitbox"]
+shape = SubResource("HitboxShape")
+
+[node name="Hurtbox" type="Area3D" parent="."]
+collision_layer = 64
+collision_mask = 0
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.175, 0)
+script = ExtResource("9_hurtbox")
+
+[node name="HurtboxCol" type="CollisionShape3D" parent="Hurtbox"]
+shape = SubResource("CapsuleShape3D_1")

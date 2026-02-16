@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(\"/z/godot/Godot_v4.6-stable_win64_console.exe\" --path \"/z/Development/hwarang\" --headless --quit)",
+      "Bash(\"/z/godot/Godot_v4.6-stable_win64_console.exe\" --path \"/z/Development/hwarang\" --check-only)",
+      "Bash(\"/z/godot/Godot_v4.6-stable_win64_console.exe\" --path \"/z/Development/hwarang\" --headless --script \"res://tests/test_project.gd\")",
+      "Bash(\"Z:/Godot/Godot_v4.6-stable_win64_console.exe\" --headless --path \"Z:/Development/Games/hwarang\" --script tests/test_project.gd)",
+      "Bash(\"Z:/Godot/Godot_v4.6-stable_win64_console.exe\":*)",
+      "Bash(\"Z:/Godot/Godot_v4.6-stable_win64_console.exe\" --headless --path \"Z:/Development/Games/hwarang\" --script tests/test_compute_camera.gd)",
+      "Bash(\"Z:/Godot/Godot_v4.6-stable_win64_console.exe\" --headless --path \"Z:/Development/Games/hwarang\" --script tests/test_input.gd)",
+      "Bash(\"Z:/Godot/Godot_v4.6-stable_win64_console.exe\" --headless --path \"Z:/Development/Games/hwarang\" --script tests/test_characters.gd)",
+      "Bash(\"Z:/Godot/Godot_v4.6-stable_win64_console.exe\" --headless --path \"Z:/Development/Games/hwarang\" --script tests/test_combat.gd)",
+      "Bash(\"Z:/Godot/Godot_v4.6-stable_win64_console.exe\" --headless --path \"Z:/Development/Games/hwarang\" --check-only --script tests/test_input.gd)",
+      "Bash(\"Z:/Godot/Godot_v4.6-stable_win64_console.exe\" --headless --path \"Z:/Development/Games/hwarang\" -e)",
+      "Bash(\"Z:/Godot/Godot_v4.6-stable_win64_console.exe\" --headless --path \"Z:/Development/Games/hwarang\" --import)",
+      "Bash(\"Z:/Godot/Godot_v4.6-stable_win64_console.exe\" --headless --path \"Z:/Development/Games/hwarang\" --script tests/test_enemies.gd)",
+      "Bash(\"Z:/Godot/Godot_v4.6-stable_win64_console.exe\" --headless --path \"Z:/Development/Games/hwarang\" --script tests/test_ui.gd)",
+      "Bash(\"Z:/Godot/Godot_v4.6-stable_win64_console.exe\" --headless --path \"Z:/Development/Games/hwarang\" --script tests/test_save.gd)",
+      "Bash(grep:*)",
+      "Bash(git init:*)",
+      "Bash(git remote add:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}
