@@ -19,7 +19,17 @@
       "Bash(grep:*)",
       "Bash(git init:*)",
       "Bash(git remote add:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(python:*)",
+      "Bash(\"Z:/Godot/Godot_v4.6-stable_win64_console.exe\" --headless --path \"Z:/Development/Games/crystal3d\" --script tests/test_ui.gd)",
+      "Bash(\"Z:/Godot/Godot_v4.6-stable_win64_console.exe\" --headless --path \"Z:/Development/Games/crystal3d\" --script tests/run-tests.gd)",
+      "Bash(\"Z:/Godot/Godot_v4.6-stable_win64_console.exe\" --headless --path \"Z:/Development/Games/crystal3d\" --script tests/test_performance.gd)",
+      "Bash(\"Z:/Godot/Godot_v4.6-stable_win64_console.exe\" --headless --path \"Z:/Development/Games/crystal3d\" --script tests/test_assets.gd)",
+      "Bash(\"Z:/Godot/Godot_v4.6-stable_win64_console.exe\" --headless --path \"Z:/Development/Games/crystal3d\" --script tests/run_tests.gd)",
+      "Bash(git mv:*)",
+      "Bash(git rm:*)"
     ]
   }
 }

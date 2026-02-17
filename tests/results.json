@@ -1,0 +1,759 @@
+{
+  "details": [
+    {
+      "message": "",
+      "name": "test_project/All 15 input actions exist",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_project/Fighter.tscn loads as CharacterBody3D",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_project/SpearAdept.tscn loads as CharacterBody3D",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_project/Dragonbound.tscn loads as CharacterBody3D",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_project/MeleeGrunt loads as CharacterBody3D",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_project/TitleScreen.tscn loads",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_project/MainMenu.tscn loads",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_project/CharacterSelect.tscn loads",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_project/HUD.tscn loads",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_project/Settings.tscn loads",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_project/PauseMenu.tscn loads",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_project/GameLevel loads",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_project/GameLevel has CameraRig",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_project/CameraRig has Camera3D",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_project/CameraRig has LockOnSystem",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_project/GameLevel has HUD",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_project/GameLevel has PauseMenu",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_project/GameLevel has 4 enemies",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_project/Fireball loads",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_project/FairyCompanion.tscn loads",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_project/DragonCompanion.tscn loads",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_project/Fire beats Ice",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_project/CharacterData[0] = Fighter",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_project/3 characters defined",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_characters/Fighter is CharacterBase",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_characters/Fighter capsule radius ~0.0875 (25%% scale)",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_characters/Fighter has StateMachine",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_characters/StateMachine has Idle state",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_characters/Fighter has Hitbox",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_characters/Fighter has Hurtbox",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_characters/SpearAdept is CharacterBase",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_characters/SpearAdept slower speed (5.5)",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_characters/SpearAdept has spear mesh",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_characters/Dragonbound is CharacterBase",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_characters/Dragonbound can_double_jump = true",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_characters/Dragonbound can_glide = true",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_characters/Dragonbound has DoubleJump and Glide states",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_combat/Fireball is CharacterBody3D",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_combat/Fireball has HitArea",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_combat/Fireball has Mesh",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_combat/Fireball has Light",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_combat/AttackData defaults valid",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_combat/HealthComponent starts at max HP",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_combat/HealthComponent died at 0 HP",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_enemies/MeleeGrunt is EnemyBase",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_enemies/MeleeGrunt is CharacterBody3D",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_enemies/MeleeGrunt has StateMachine",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_enemies/All 5 enemy states present",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_enemies/MeleeGrunt has DetectionArea",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_enemies/MeleeGrunt has Hitbox",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_enemies/MeleeGrunt has Hurtbox",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_enemies/MeleeGrunt has 3 HP",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_save/has_save = false when no save",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_save/has_save = true after save",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_save/Loaded character_id = 1",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_save/Loaded current_hp = 4",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_save/Save has version = 1",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_save/Save has timestamp",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_save/Save deleted successfully",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_input/'move_forward' exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_input/'move_backward' exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_input/'move_left' exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_input/'move_right' exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_input/'jump' exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_input/'crouch' exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_input/'run' exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_input/'attack' exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_input/'magic_charge' exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_input/'companion_action' exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_input/'lock_on_toggle' exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_input/'lock_on_next' exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_input/'lock_on_prev' exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_input/'ui_confirm' exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_input/'ui_back' exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_ui/TitleScreen is Control",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_ui/TitleScreen has PromptLabel",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_ui/All 5 menu buttons present",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_ui/CharacterSelect has 3 panels",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_ui/HUD is CanvasLayer",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_ui/HUD has HeartsContainer",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_ui/HUD has LockOnIndicator",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_ui/Settings scene loads",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_ui/PauseMenu has ResumeButton",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_performance/GameLevel instantiated in 29ms (< 5000ms)",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_performance/3 characters loaded in 26ms (< 2000ms)",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_performance/1000 HealthComponent cycles in 1ms (< 500ms)",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_performance/14 core scripts loaded in 8ms (< 3000ms)",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/TitleScreen.tscn exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/MainMenu.tscn exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/CharacterSelect.tscn exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/HUD.tscn exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/Settings.tscn exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/PauseMenu.tscn exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/GameLevel.tscn exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/CharacterBase.tscn exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/Fighter.tscn exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/SpearAdept.tscn exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/Dragonbound.tscn exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/MeleeGrunt.tscn exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/Fireball.tscn exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/FairyCompanion.tscn exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/DragonCompanion.tscn exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/game_manager.gd exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/input_manager.gd exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/save_manager.gd exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/control_hints.gd exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/character_base.gd exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/character_state.gd exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/state_machine.gd exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/fighter.gd exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/spear_adept.gd exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/dragonbound.gd exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/enemy_base.gd exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/melee_grunt.gd exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/hitbox.gd exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/hurtbox.gd exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/health_component.gd exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/attack_data.gd exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/projectile.gd exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/companion_base.gd exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/fairy_companion.gd exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/dragon_companion.gd exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/camera_rig.gd exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/lock_on_system.gd exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/element_types.gd exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/character_data.gd exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/race_types.gd exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/idle_state.gd exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/run_state.gd exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/sprint_state.gd exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/jump_state.gd exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/fall_state.gd exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/crouch_state.gd exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/attack_state.gd exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/magic_charge_state.gd exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/magic_recovery_state.gd exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/double_jump_state.gd exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/dragon_jump_state.gd exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/glide_state.gd exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/long_jump_state.gd exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/high_jump_state.gd exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/enemy_idle_state.gd exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/enemy_patrol_state.gd exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/enemy_chase_state.gd exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/enemy_attack_state.gd exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/enemy_die_state.gd exists",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/project.godot loads successfully",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/project name is set (\"Crystal 3D\")",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/main scene is set (\"res://scenes/ui/TitleScreen.tscn\")",
+      "status": "pass"
+    },
+    {
+      "message": "",
+      "name": "test_assets/assets/ directory exists (placeholder stage â€” no art files yet)",
+      "status": "pass"
+    }
+  ],
+  "durationMs": 1502,
+  "status": "pass",
+  "testsPassed": 150,
+  "testsTotal": 150,
+  "timestamp": "2026-02-17T03:08:06Z"
+}
