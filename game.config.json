@@ -1,31 +1,35 @@
 {
   "id": "crystal3d",
-  "title": "Crystal 3D",
-  "engine": "godot",
-  "engineVersion": "4.6",
-  "renderer": "gl_compatibility",
+  "title": "Hybrid Nights",
+  "engine": "Godot 4.6",
+  "renderer": "GL Compatibility",
   "genre": "3D Action RPG",
-  "status": "in-development",
-  "entryScene": "scenes/ui/TitleScreen.tscn",
-  "projectFile": "project.godot",
-  "testRunner": "tests/run-tests.gd",
-  "testCommand": "--headless --script tests/run-tests.gd",
-  "viewport": {
-    "width": 1280,
-    "height": 720
+  "description": "3D action-adventure with character-switching, companion system, and lock-on combat.",
+  "viewport": { "width": 1280, "height": 720 },
+  "launch": {
+    "type": "godot",
+    "mainScene": "res://scenes/ui/TitleScreen.tscn",
+    "cli": "{godot} --path \"{projectDir}\""
   },
-  "features": [
-    "controller-support",
-    "save-system",
-    "multiple-characters",
-    "state-machine-ai",
-    "hitbox-hurtbox-combat",
-    "lock-on-system"
-  ],
-  "metadata": {
+  "tests": {
+    "runner": "tests/run_tests.gd",
+    "cli": "{godot} --headless --path \"{projectDir}\" --script tests/run_tests.gd",
+    "suites": [
+      "test_project",
+      "test_characters",
+      "test_combat",
+      "test_enemies",
+      "test_save",
+      "test_input",
+      "test_ui",
+      "test_performance",
+      "test_assets"
+    ]
+  },
+  "extended": {
     "lastGameplayUpdate": "2026-02-16",
-    "lastArtUpdate": "",
-    "buildVersion": "0.1.0",
-    "progressPercent": 15
+    "lastArtUpdate": null,
+    "buildVersion": "0.1.0-alpha",
+    "progressPercent": 35
   }
 }
