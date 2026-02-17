@@ -121,7 +121,7 @@ func _init() -> void:
 	var json_str := JSON.stringify(result, "  ")
 
 	# Write to file for launcher/CI consumption
-	var file := FileAccess.open("res://tests/results.json", FileAccess.WRITE)
+	var file := FileAccess.open("res://tests/test-results.json", FileAccess.WRITE)
 	if file:
 		file.store_string(json_str)
 		file.close()

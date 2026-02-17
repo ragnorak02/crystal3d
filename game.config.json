@@ -5,6 +5,17 @@
   "renderer": "GL Compatibility",
   "genre": "3D Action RPG",
   "description": "3D action-adventure with character-switching, companion system, and lock-on combat.",
+  "features": [
+    "controller-support",
+    "control-hints",
+    "save-system",
+    "multiple-characters",
+    "state-machine-ai",
+    "hitbox-hurtbox-combat",
+    "lock-on-system",
+    "achievement-system",
+    "studio-os-integration"
+  ],
   "viewport": { "width": 1280, "height": 720 },
   "launch": {
     "type": "godot",
@@ -27,9 +38,9 @@
     ]
   },
   "extended": {
-    "lastGameplayUpdate": "2026-02-16",
+    "lastGameplayUpdate": "2026-02-17",
     "lastArtUpdate": null,
-    "buildVersion": "0.1.0-alpha",
-    "progressPercent": 35
+    "buildVersion": "0.2.0-alpha",
+    "progressPercent": 38
   }
 }
